@@ -110,3 +110,20 @@ function register() {
 }
 
 showLoginForm();
+
+
+// 背景颜色渐变
+document.addEventListener('DOMContentLoaded', (event) => {
+  const sections = document.querySelectorAll('.gradient-section');
+  let scrollPosition = 0;
+
+  window.addEventListener('scroll', () => {
+      scrollPosition += window.scrollY;
+      sections.forEach(section => {
+          const sectionHeight = section.clientHeight;
+          const gradientShift = scrollPosition / sectionHeight * 100;
+          section.style.backgroundPosition = `-${gradientShift}%`;
+      });
+  });
+});
+

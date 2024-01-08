@@ -111,8 +111,7 @@ h1 {
 
 .city {
   display: flex;
-  background-color: rgb(187, 213, 167);
-  margin: 30px;
+  background-image: linear-gradient(to top, #e29d55, #e4a958, #e4b65c, #e4c262, #e3cf69, #dad66d, #d0dc73, #c6e27a, #b2e380, #9ce489, #85e493, #6ce39f);  margin: 30px;
 }
 .img-box {
   margin: 10px;
@@ -120,6 +119,38 @@ h1 {
 
 .text-box1 {
   margin: 20px;
+}
+
+/*首页页面背景颜色渐变*/
+.gradient-index {
+  
+  background-image: linear-gradient(to left bottom, #a4e975, #99e876, #8de777, #80e679, #72e57b, #77e676, #7ce871, #81e96c, #9bed5c, #b5ef4c, #d0f13c, #ebf22a);
+  animation: gradient-scroll 5s linear infinite;
+}
+@keyframes gradient-scroll {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 0; }
+}
+
+/*美食页面背景颜色渐变*/
+.gradient-food {
+  
+  background-image: linear-gradient(to left bottom, #ef785a, #f2884f, #f09945, #ebaa3e, #e1bc3c, #e4b83c, #e7b53c, #e9b13d, #f39748, #f47e59, #eb6a6c, #d95c7e);
+  animation: gradient-scroll 5s linear infinite;
+}
+@keyframes gradient-scroll {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 0; }
+}
+
+/*民族页面背景颜色渐变*/
+.gradient-section {
+  
+  background-image: radial-gradient(circle, #c2ec88, #c6e17d, #cad674, #cccb6c, #cdc065, #d1b85e, #d4af58, #d7a653, #df9c4e, #e6914c, #ed854d, #f37951);  animation: gradient-scroll 5s linear infinite;
+}
+@keyframes gradient-scroll {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 0; }
 }
 
 /* 美食样式 */
@@ -158,7 +189,7 @@ h1 {
 
 /*民族样式*/
 .ethnic-title {
-  color: white;
+  color: black;
 }
 
 .colum-image {
@@ -243,6 +274,8 @@ a:hover {
   text-decoration: underline;
   /* 鼠标悬停时添加下划线 */
 }
+
+
 
 /* 旅游路线部分的样式 */
 .content {
@@ -365,4 +398,27 @@ h2 {
   display: block;
   color: black;
   height: 30px;
+}
+
+
+/*页脚样式*/
+footer{
+  background-color: black;
+  padding:30px;
+}
+
+footer p{
+  color:white;
+  font-size: 15px;
+  text-align: center;
+}
+
+footer a{
+  font-size: 20px;
+}
+
+#claim{
+  padding-top:15px;
+  color:red;
+  font-size: 18px;
 }

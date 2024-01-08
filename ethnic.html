@@ -7,33 +7,29 @@
   <title>云南少数民族风俗</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      /* 将背景图片应用于整个页面 */
-      background: url("images/民族页面背景.jpg") rgba(0, 0, 0, 0.1);
-      /* 背景图片大小自适应 */
-      background-size: cover;
-      /* 让背景图片不重复 */
-      background-repeat: no-repeat;
-      /* 让背景图片相对于页面固定 */
-      background-attachment: fixed;
+    header{
+      background-image: 标题;
     }
 
     section {
       padding: 20px;
+      margin-left: 200px;
+      margin-right: 200px;
+      background-color: rgb(226, 226, 178);
     }
 
     p {
       line-height: 1.6;
       text-indent: 2em;
       font-size: 16px;
-      color: white;
+      color: black;
     }
 
   </style>
 </head>
 
-<body>
-  <nav>
+<body class="gradient-section">
+  <nav id="top">
     <image id="logo" src="images/logo.png"></image>
     <image id="user" src="images/user.png" onclick="loginPage()"></image>
     <ul>
@@ -48,11 +44,12 @@
 
 
   <header>
-    <h1 style="color: rgb(250, 189, 198)">云南少数民族</h1>
+    <h1 style="color: black">云南少数民族</h1>
   </header>
 
   <div id='vertical-nav'>
     <ul type='none'>
+      <li><a href="#top">▲</a></li>
       <li><a href="#baizu">白族</a></li>
       <li><a href="#yizu">彝族</a></li>
       <li><a href="#daizu">傣族</a></li>
@@ -156,7 +153,7 @@
         </iframe>
       </div>
 
-      <div class="flex-item">
+      <div class="flex-item" >
         <p>
           泼水节是傣族人民一年一度的重要节日，也是傣族的新年庆典。泼水节在傣历的六七月举行，根据傣历与公历的对应关系，大约在阳历的4月13日至15日，持续三至四天。这个节日不仅是傣族人民辞旧迎新的时刻，也是他们祈求吉祥、幸福和丰收的时节。
         </p>
@@ -208,6 +205,16 @@
       </div>
     </div>
   </section>
+
+  <footer>
+    <p><a href="index.html">返回首页</a> | <a href="#top">回到顶部</a> | <a href="http://cn.iyunnan.travel/html/fs/">友情链接</a> | <a href="https://github.com/cddy3/-">下载</a> | <a href="contactus.html">关于我们</a></p>
+    <p>版权所有：南开大学23级第二学位 谭雨坤 张宜鑫 阿里亚斯卡日·艾克白尔</p>
+    <p>学校地址：天津市滨海新区宏达街23号 邮编：300457</p>
+    <p>旅游投诉：96927 | 0871-64608315</p>
+    <p>政务查询：0871-96128</p>
+    <p id="claim">所有图片、视频素材均来自于网络，如有侵权，请联系删除</p>
+  </footer>
+    
   <div id="clock"></div>
   <script src="script.js"></script>
 </body>
