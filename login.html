@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>登录云南旅游网</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <image id="logo" src="images/logo.png"></image>
+      <image id="user" src="images/user.png" onclick="loginPage()"></image>
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="food.html">美食</a></li>
+        <li><a href="ethnic.html">民族</a></li>
+        <li><a href="route.html">旅游路线</a></li>
+        <li><a href="https://dct.yn.gov.cn/">云南文旅厅</a></li>
+        <li><a href="contactus.html">联系我们</a></li>
+      </ul>
+    </nav>
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Login and Registration</title>
+        <link rel="stylesheet" href="style.css" />
+      </head>
+      <body>
+        <div class="login-page">
+          <div id="login-form" class="form">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="用户名" />
+            <input type="password" id="login-password" placeholder="密码" />
+            <button onclick="login()">登录</button>
+            <p class="message">
+              没有账号?<a href="#" onclick="toggleForm()">点此注册</a>
+            </p>
+          </div>
+          <div id="register-form" class="form">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="用户名" />
+            <input type="password" id="register-password" placeholder="密码" />
+            <input
+              type="password"
+              id="register-confirm-password"
+              placeholder="确认密码"
+            />
+            <span id="captcha-equation"></span>
+            <input type="text" id="register-captcha" placeholder="验证码" />
+            <button onclick="register()">注册</button>
+            <p class="message">
+              已有帐号?<a href="#" onclick="toggleForm()">点此登录</a>
+            </p>
+          </div>
+        </div>
+        <div id="clock"></div>
+        <script src="script.js"></script>
+      </body>
+    </html>
+  </body>
+</html>

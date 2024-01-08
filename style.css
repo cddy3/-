@@ -1,0 +1,368 @@
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(228, 228, 228);
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+section {
+  margin: 20px;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#logo {
+  float: left;
+  height: 80px;
+  width: 80px;
+}
+
+#user {
+  float: right;
+  height: 70px;
+  width: 70px;
+}
+
+h1 {
+  font: caption;
+  font-size: xx-large;
+}
+
+#clock {
+  position: fixed;
+  text-align: center;
+  bottom: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  background-color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#screen {
+  background: url(images/scenery1.jpg) no-repeat center;
+  height: 400px;
+}
+
+.illustration {
+  margin: 10px;
+}
+
+.title {
+  text-align: center;
+  font: caption;
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 30px;
+}
+
+.text {
+  text-align: center;
+  font-size: large;
+  color: dimgray;
+}
+.claim {
+  padding: 80px;
+  color: red;
+}
+
+.city {
+  display: flex;
+  background-color: rgb(187, 213, 167);
+  margin: 30px;
+}
+.img-box {
+  margin: 10px;
+}
+
+.text-box1 {
+  margin: 20px;
+}
+
+/* 美食样式 */
+.flex-container-food {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 85%;
+  height: auto;
+  margin: auto;
+}
+
+.food-box {
+  height: 300px;
+  width: 240px;
+  text-align: center;
+  background-color: rgb(252, 242, 204);
+  margin: 5px;
+}
+
+.image-box2 {
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
+
+.food-box:hover {
+  transform: scale(1.1);
+}
+
+.text-box2 {
+  font-size: larger;
+}
+
+/*民族样式*/
+.ethnic-title {
+  color: white;
+}
+
+.colum-image {
+  width: 300px;
+  height: 450px;
+}
+
+.row-image {
+  width: 700px;
+  height: 400px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  width: auto;
+  height: auto;
+  margin: 10px;
+}
+
+.flex-item {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+a {
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(47, 255, 82);
+}
+
+#vertical-nav {
+  width: 150px;
+  /* 导航栏宽度 */
+  background-color: #333;
+  /* 导航栏背景颜色 */
+  color: white;
+  /* 导航栏文字颜色 */
+  text-align: center;
+  /* 文字对齐方式 */
+  padding: 10px;
+  /* 内边距 */
+  position: fixed;
+  /* 使用fixed定位 */
+  right:30px;
+  bottom:50px;
+  border-radius:50px;
+}
+
+#vertical-nav ul {
+
+  list-style-type: none;
+  /* 去除列表样式 */
+  padding: 0;
+  /* 去除内边距 */
+  margin:0;
+}
+
+#vertical-nav li {
+  margin:15px;
+}
+
+#vertical-nav a {
+  color: white;
+  /* 链接文字颜色 */
+  text-decoration: none;
+  /* 去除下划线 */
+  font-size:30px;
+}
+
+#vertical-nav a:hover {
+  text-decoration: underline;
+  /* 鼠标悬停时添加下划线 */
+}
+
+/* 旅游路线部分的样式 */
+.content {
+  display: none;
+}
+
+.box-expanded .content {
+  display: block;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+#div1,
+#div2 {
+  display: inline-block;
+  vertical-align: top; /* 可选，用于保持元素顶部对齐 */
+}
+
+.content {
+  padding: 20px;
+}
+
+.text-box {
+  border: 5px solid #3a2626; /* 设置边框宽度、样式和颜色 */
+  padding: 10px; /* 设置内边距 */
+  box-shadow: 0 0 10px rgba(117, 90, 90, 0.5); /* 设置阴影效果 */
+  background-color: #e8d0b9; /* 设置背景颜色 */
+  border-radius: 0; /* 设置边框没有棱角 */
+}
+
+.text-with-border {
+  border: 5px solid #010b58; /* 设置边框宽度、样式和颜色 */
+  padding: 10px; /* 设置内边距 */
+  background-color: rgba(164, 243, 250, 0.5);
+}
+
+/*登录页面的样式*/
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4caf50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: #43a047;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.form .message a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.register-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.register-form {
+  display: none;
+}
+
+#captcha-equation {
+  display: block;
+  color: black;
+  height: 30px;
+}
